@@ -11,7 +11,7 @@ public class Aleatory {
     public static String enrollment(){
         Random rnd = new Random();
         
-        String enrollment = null;
+        String enrollment;
         int number = rnd.nextInt(9999);
         
         char [] first = {'A', 'B', 'C', 'D', 'F', 'G', 'H', 'J'}; //no vale 'R' //8
