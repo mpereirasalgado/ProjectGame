@@ -7,33 +7,33 @@ package GameProject;
  */
 public class Cars {
     
-    String matricula;
+    String enrollment;
     String color;
-    String marca;
-    String modelo;
-    int ocupCoche;
+    String brand;
+    String model;
+    int carFills;
 
     public Cars() {
-        matricula = Aleatory.enrollment();
+        enrollment = Aleatory.enrollment();
         color = Aleatory.color();
-        marca = Aleatory.marca();
-        modelo = null;
-        ocupCoche = Aleatory.vehicle_occupancy();
+        brand = Aleatory.marca();
+        model = null;
+        carFills = Aleatory.vehicle_occupancy();
     }
 
     public Cars(String matricula, String color, String marca, String modelo, int ocupCoche) {
-        this.matricula = matricula;
+        this.enrollment = matricula;
         this.color = color;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.ocupCoche = ocupCoche;
+        this.brand = marca;
+        this.model = modelo;
+        this.carFills = ocupCoche;
     }
 
-    public String getMatricula() {
-        return matricula;
+    public String getEnrollment() {
+        return enrollment;
     }
-    public void setMatricula(String matricula) {
-        this.matricula = matricula;
+    public void setEnrollment(String enrollment) {
+        this.enrollment = enrollment;
     }
 
     public String getColor() {
@@ -43,34 +43,34 @@ public class Cars {
         this.color = color;
     }
 
-    public String getMarca() {
-        return marca;
+    public String getBrand() {
+        return brand;
     }
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
-    public int getOcupCoche() {
-        return ocupCoche;
+    public String getModel() {
+        return model;
     }
-    public void setOcupCoche(int ocupCoche) {
-        this.ocupCoche = ocupCoche;
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public int getCarFills() {
+        return carFills;
+    }
+    public void setCarFills(int carFills) {
+        this.carFills = carFills;
     }
 
     @Override
     public String toString() {
-        return "Cars{" + "matricula=" + matricula + ", color=" + color + ", marca=" + marca + ", modelo=" + modelo + ", ocupCoche=" + ocupCoche + '}';
+        return "Cars{" + "enrollment=" + enrollment + ", color=" + color + ", brand=" + brand + ", model=" + model + ", carFills=" + carFills + '}';
     }
     
     public String toPrint(){
-        return matricula + "¬" + color + "¬" + marca + "¬" + modelo+ "¬" + ocupCoche;
+        return enrollment + "¬" + color + "¬" + brand + "¬" + model+ "¬" + carFills;
     }
     
 }
