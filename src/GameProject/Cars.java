@@ -1,8 +1,7 @@
-
 package GameProject;
 
 /**
- *
+ * @version 1.0 pre-Alfa
  * @author micaelr
  * @author seijas
  */
@@ -12,12 +11,17 @@ public class Cars {
     String color;
     String marca;
     String modelo;
-    String ocupCoche;
+    int ocupCoche;
 
     public Cars() {
+        matricula = Aleatory.enrollment();
+        color = Aleatory.color();
+        marca = Aleatory.marca();
+        modelo = null;
+        ocupCoche = Aleatory.vehicle_occupancy();
     }
 
-    public Cars(String matricula, String color, String marca, String modelo, String ocupCoche) {
+    public Cars(String matricula, String color, String marca, String modelo, int ocupCoche) {
         this.matricula = matricula;
         this.color = color;
         this.marca = marca;
@@ -28,7 +32,6 @@ public class Cars {
     public String getMatricula() {
         return matricula;
     }
-
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
@@ -36,7 +39,6 @@ public class Cars {
     public String getColor() {
         return color;
     }
-
     public void setColor(String color) {
         this.color = color;
     }
@@ -44,7 +46,6 @@ public class Cars {
     public String getMarca() {
         return marca;
     }
-
     public void setMarca(String marca) {
         this.marca = marca;
     }
@@ -52,16 +53,14 @@ public class Cars {
     public String getModelo() {
         return modelo;
     }
-
     public void setModelo(String modelo) {
         this.modelo = modelo;
     }
 
-    public String getOcupCoche() {
+    public int getOcupCoche() {
         return ocupCoche;
     }
-
-    public void setOcupCoche(String ocupCoche) {
+    public void setOcupCoche(int ocupCoche) {
         this.ocupCoche = ocupCoche;
     }
 
@@ -70,6 +69,8 @@ public class Cars {
         return "Cars{" + "matricula=" + matricula + ", color=" + color + ", marca=" + marca + ", modelo=" + modelo + ", ocupCoche=" + ocupCoche + '}';
     }
     
-    
+    public String toPrint(){
+        return matricula + "¬" + color + "¬" + marca + "¬" + modelo+ "¬" + ocupCoche;
+    }
     
 }
