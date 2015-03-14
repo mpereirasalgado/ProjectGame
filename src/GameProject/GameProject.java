@@ -13,18 +13,19 @@ public class GameProject {
     public static void main(String[] args) {
         
         boolean modifier = false;
-        
+        Garage gar = new Garage();
         do{
-            int option = JOptionPane.showOptionDialog(null, "Benvido ao garaxe", "Garaxe", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[] {"Empezar", "Configuración", "Sair"}, null);
+            int option = JOptionPane.showOptionDialog(null, "Welcome to my garage", "Garage", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, new Object[] {"Start", "Configuration", "Exit"}, null);
             
             switch(option){
                 
                 case 0:
-                    //Empezar
+                    String dailyT[] = Methods.readFile();
+                    JOptionPane.showMessageDialog(null, dailyT[0]);
                     break;
                 
                 case 1:
-                    //cofigurar
+                    gar.runGame();
                     break;
                 
                 case 2:
@@ -41,5 +42,5 @@ public class GameProject {
         }while(modifier == false);
         
     }
-    
+    // branch micaelr created, my workspace
 }

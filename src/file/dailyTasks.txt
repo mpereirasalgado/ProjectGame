@@ -1,0 +1,4 @@
+El jefe se a enfadado--Rojo,Negro,Blanco
+no le gustan los audis--Verde,Rojo,Blanco
+le encantan los elelectricos--Negro,Blanco
+visista del alcalde--Blanco,Rojo,Azul--Audi,Renaul,Citroen

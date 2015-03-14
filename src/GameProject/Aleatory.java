@@ -30,6 +30,16 @@ public class Aleatory {
         enrollment = String.valueOf(number) + '-' + one + two + three;
         return enrollment;
     }
+    /**
+     * generar un numero aleatorio entre el minimo y maximo especificado
+     * @param min valor minimo
+     * @param max valor maximo
+     * @return  devuelve numero entre minimo y maximo
+     */
+    public static int number(int min, int max){
+        Random rnd = new Random();
+        return (rnd.nextInt(max-min)+min);
+    }
     
     public static String color(){
         Random rnd = new Random();
